@@ -1,0 +1,1 @@
+You can test the site at: https://smart-contact-manager0.herokuapp.com/
