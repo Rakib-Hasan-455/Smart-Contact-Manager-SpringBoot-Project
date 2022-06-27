@@ -14,7 +14,7 @@
     <name>8. Smart Contact Manager Project</name>
     <description>8. Smart Contact Manager Project</description>
     <properties>
-        <java.version>11</java.version>
+        <java.version>11.0.15</java.version>
     </properties>
     <dependencies>
         <dependency>
