@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"  th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+
+            <form class="form-signin" method="post" th:action="@{/do_login}">
+                <h2 class="form-signin-heading">Please sign in</h2>
+                <div th:if="${param.error}" class="alert alert-danger"> Invalid Username or Password</div>
+                <div th:if="${param.logout}" class="alert alert-success"> You have been Logged Out</div>
+
+                <p>
+                    <label for="username" class="sr-only">User Email</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+                </p>
+                <p>
+                    <label for="password" class="sr-only">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+                </p>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
